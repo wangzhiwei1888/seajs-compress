@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+
+</head>
+<body>
+
+<script type="text/javascript" src="js/sea.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+
+<script type="text/javascript">
+
+
+// 
+// 加载入口模块
+// seajs.use("js/main");
+
+// For development
+if (location.href.indexOf("?dev") > 0) {
+  
+	// seajs.use("./js/main", function(main) {
+	//   main.init()
+	// });
+	seajs.use("./js/main");
+}
+// For production
+else {
+  
+ // 	seajs.use("./build/main", function(main) {
+	//   main.init()
+	// });
+
+  // seajs.use("./dist/main");
+  seajs.use("./build/main");
+
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
