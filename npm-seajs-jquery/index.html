@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="./sea.js"></script>
 
 <script type="text/javascript">
 
@@ -20,7 +20,7 @@
 // For development
 if (location.href.indexOf("?dev") > 0) {
   
-	seajs.use("./js/main");
+	seajs.use("./src/main");
 }
 // For production
 else {
@@ -30,7 +30,7 @@ else {
 	// });
 
   // seajs.use("./dist/main");
-  seajs.use("./dist/js/main");
+  seajs.use("jwseajs/hello/1.0.0/main.js");
 
 }
 

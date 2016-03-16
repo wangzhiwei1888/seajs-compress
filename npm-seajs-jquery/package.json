@@ -3,6 +3,6 @@
   "name": "hello",
   "version": "1.0.0",
   "spm": {
-    "output": ["./js/main.js"]
+    "output": ["main.js"]
   }
 }
